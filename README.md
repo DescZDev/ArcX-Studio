@@ -53,7 +53,7 @@ Customizable settings stored locally for:
 ARC Studio is designed to work with files used in Minecraft Legacy Edition archives, including:
 
 - ".arc" archive files
-- ".sfw" texture containers
+- ".swf" texture containers
 - ".fui" texture containers
 - ".loc" localization files
 - various internal game assets
