@@ -13,6 +13,7 @@ ArcX Studio focuses on speed, stability, and usability, giving modders and devel
 
 Browse archive contents with a clean file explorer interface.
 Quickly navigate through folders and files stored inside ARC archives.
+built-in ".bak" backup file 
 
 🛠 Archive Repair
 
