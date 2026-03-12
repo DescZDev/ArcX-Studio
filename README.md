@@ -81,7 +81,7 @@ ARC Studio is designed to work with files used in Minecraft Legacy Edition archi
 
 Upcoming improvements for ARC Studio include:
 
-- Texture editor for ".sfw" and ".fui" files
+- Texture editor for ".swf" and ".fui" files
 - Archive validation tools
 - Advanced asset viewer
 - Batch archive operations
