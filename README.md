@@ -27,24 +27,8 @@ Automatically detect and repair common archive issues such as:
 
 Real-time logging for archive operations including:
 
-- archive building
 - archive repairing
 - extraction processes
-
-🖼 Texture Viewer
-
-Preview texture files stored inside the archive.
-
-Future versions will include texture replacement and editing tools.
-
-⚙ Settings Manager
-
-Customizable settings stored locally for:
-
-- default extraction paths
-- logging preferences
-- repair behavior
-- performance options
 
 ---
 
@@ -53,8 +37,6 @@ Customizable settings stored locally for:
 ARC Studio is designed to work with files used in Minecraft Legacy Edition archives, including:
 
 - ".arc" archive files
-- ".swf" texture containers
-- ".fui" texture containers
 - ".loc" localization files
 - various internal game assets
 
@@ -62,9 +44,9 @@ ARC Studio is designed to work with files used in Minecraft Legacy Edition archi
 
 🖥 System Requirements
 
-- Windows 11 Pro
+- Windows 11 Pro (Highly recommended)
 - .NET Framework 4.8
-- 64-bit processor recommended
+- 64-bit processor (recommended)
 
 ---
 
@@ -79,7 +61,7 @@ ARC Studio is designed to work with files used in Minecraft Legacy Edition archi
 
 📌 Planned Features
 
-Upcoming improvements for ARC Studio include:
+Upcoming improvements for ArcX Studio include:
 
 - Texture editor for ".swf" and ".fui" files
 - Archive validation tools
@@ -91,7 +73,7 @@ Upcoming improvements for ARC Studio include:
 
 ⚠ Disclaimer
 
-ARC Studio is an independent tool created for modding and research purposes.
+ArcX Studio is an independent tool created for modding and research purposes.
 It is not affiliated with Mojang, Microsoft, or 4J Studios.
 
 ---
