@@ -7,15 +7,15 @@ ArcX Studio focuses on speed, stability, and usability, giving modders and devel
 
 ---
 
-✨ Features
+Features
 
-📦 Archive Explorer
+Archive Explorer
 
 Browse archive contents with a clean file explorer interface.
 Quickly navigate through folders and files stored inside ARC archives.
-built-in ".bak" backup file 
+built-in ".bak" (Automatically backup your file before repairing)
 
-🛠 Archive Repair
+Archive Repair
 
 Automatically detect and repair common archive issues such as:
 
@@ -23,7 +23,7 @@ Automatically detect and repair common archive issues such as:
 - corrupted file entries
 - invalid archive structures
 
-🧾 Live Operation Logs
+Live Operation Logs
 
 Real-time logging for archive operations including:
 
@@ -32,7 +32,7 @@ Real-time logging for archive operations including:
 
 ---
 
-📁 Supported Files
+Supported Files
 
 ARC Studio is designed to work with files used in Minecraft Legacy Edition archives, including:
 
@@ -42,32 +42,22 @@ ARC Studio is designed to work with files used in Minecraft Legacy Edition archi
 
 ---
 
-🖥 System Requirements
+System Requirements
 
 - Windows 11 Pro (Highly recommended)
 - .NET Framework 4.8
-- 64-bit processor (recommended)
+- 64-bit processor (Recommended)
 
 ---
 
-🚀 Getting Started
+Getting Started
 
-1. Launch ARC Studio
-2. Open an ".arc" archive
+1. Launch ArcX Studio
+2. Open an ".arc" file
 3. Browse the archive contents
 4. Extract, edit, or rebuild files
 
 ---
-
-📌 Planned Features
-
-Upcoming improvements for ArcX Studio include:
-
-- Texture editor for ".swf" and ".fui" files
-- Archive validation tools
-- Advanced asset viewer
-- Batch archive operations
-- Improved performance for large archives
 
 ---
 
@@ -77,7 +67,3 @@ ArcX Studio is an independent tool created for modding and research purposes.
 It is not affiliated with Mojang, Microsoft, or 4J Studios.
 
 ---
-
-👨‍💻 Developer
-
-ARC Studio is developed and maintained by DescZ.
