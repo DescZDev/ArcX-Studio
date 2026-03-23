@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4001A544-D805-44CF-8FA6-64C6EAB2241E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ArcX_Studio</RootNamespace>
+    <AssemblyName>ArcX-Studio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ARCStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ARCStudio.Designer.cs">
+      <DependentUpon>ARCStudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LOCEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LOCEditor.Designer.cs">
+      <DependentUpon>LOCEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DMF\DarkModeCS.cs" />
+    <Compile Include="Helpers\DMF\Messenger.cs" />
+    <Compile Include="Helpers\PictureBoxWithInterpolationMode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rendering\MenuStripRenderer.cs" />
+    <Compile Include="Rendering\StatusStripRenderer.cs" />
+    <Compile Include="Workers\ARC\ArcEntry.cs" />
+    <Compile Include="Workers\ARC\ArchiveWorker.cs" />
+    <Compile Include="Workers\ARC\ArcProcesser.cs" />
+    <Compile Include="Workers\ARC\ArraySupport.cs" />
+    <Compile Include="Workers\ARC\FileEntry.cs" />
+    <Compile Include="Workers\ARC\FileUtils.cs" />
+    <Compile Include="Workers\Filebase.cs" />
+    <Compile Include="Workers\FileData.cs" />
+    <Compile Include="Workers\FileOutput.cs" />
+    <Compile Include="Workers\Lang\LanguageBuilder.cs" />
+    <Compile Include="Workers\Lang\LanguagesParser.cs" />
+    <Compile Include="Workers\Lang\models\IndexEntry.cs" />
+    <Compile Include="Workers\Lang\models\LanguageEntry.cs" />
+    <Compile Include="Workers\Lang\models\LanguagesContainer.cs" />
+    <Compile Include="Workers\Lang\models\MessageEntry.cs" />
+    <Compile Include="Workers\PCK.cs" />
+    <Compile Include="Workers\SplitterClass.cs" />
+    <EmbeddedResource Include="Forms\ARCStudio.resx">
+      <DependentUpon>ARCStudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LOCEditor.resx">
+      <DependentUpon>LOCEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\FUI ICON.png" />
+    <None Include="Resources\FUI ICON1.png" />
+    <Content Include="Resources\IMAGE ICON.png" />
+    <None Include="Resources\TXT ICON2.png" />
+    <None Include="Resources\LOC ICON1.png" />
+    <None Include="Resources\ZUnknown1.png" />
+    <None Include="Resources\PCK ICON1.png" />
+    <None Include="Resources\NBT ICON1.png" />
+    <None Include="Resources\ZZFolder2.png" />
+    <None Include="Resources\IMAGE ICON1.png" />
+    <Content Include="Resources\LOC ICON.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\NBT ICON.png" />
+    <Content Include="Resources\PCK ICON.png" />
+    <Content Include="Resources\TXT ICON.png" />
+    <Content Include="Resources\TXT ICON1.png" />
+    <Content Include="Resources\ZUnknown.png" />
+    <Content Include="Resources\ZZFolder.png" />
+    <None Include="Resources\ZZFolder1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
