@@ -63,7 +63,7 @@ Build Solution
 
 1. Make sure you installed C# and .NET 4.8 Kit
 2. Open Visual Studio 2026 or 2022
-3. File < Open a solution and make sure to open "ArcX_Studio.sln" nothing else
+3. File < Open a solution and make sure to open "ArcX-Studio.sln" nothing else
 4. Build or Modify 
 
 
