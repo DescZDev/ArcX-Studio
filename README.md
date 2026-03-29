@@ -46,7 +46,7 @@ System Requirements
 
 - Windows 11 Pro (Highly recommended)
 - .NET Framework 4.8
-- 64-bit processor (Recommended)
+- 64-bit processor 
 
 ---
 
@@ -73,5 +73,3 @@ Build Solution
 
 ArcX Studio is an independent tool created for modding and research purposes.
 It is not affiliated with Mojang, Microsoft, or 4J Studios.
-
----
